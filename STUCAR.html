@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>STUCAR</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">STUCAR</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">INFORMACION EMPRESA</a></li>
+                    <li><a href="#carouselExampleIndicators" onclick="seleccionar()">FOTOS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/logo.png" alt="">
+            </div>
+            <h1>STUCAR</h1>
+            <h2>LUXURY</h2>
+            <div class="redes">
+                <a href="coches.php"><i class="fa-solid fa-car"></i></a>
+                <a href="clientes.php"><i class="fa-solid fa-person"></i></a>
+                <a href="empleados.php"><i class="fa-solid fa-clipboard-user"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Nosotros</h2>
+            <p><span>Hola, somos STUCAR.</span> Una empresa dedicada a la venta de coches de alta calidad. En nuestro catálogo podrás encontrar una
+                 amplia selección de vehículos de las mejores marcas del mercado.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Empresa</h3>
+                    <ul>
+                        <li>
+                            <strong>Fundacion</strong>
+                            17-09-2022
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            638 75 05 05
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            stucar@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            08184, Barcelona, España
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Marcas Potenciales</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <img  src="img/porsche.png"  alt="">
+                            <span></span>
+                        </div>
+                        <div class="interes">
+                            <img  src="img/lambo.png"  alt="">
+                        </div>
+                        <div class="interes">
+                            <img  src="img/toyota.png"  alt="">
+                        </div>
+                        <div class="interes">
+                            <img  src="img/ferrari.png"  alt="">
+                        </div>
+                        <div class="interes">
+                            <img  src="img/maserati.png"  alt="">
+                        </div>
+                        <div class="interes">
+                            <img  src="img/bmw.png"  alt="">
+                        </div>
+                        <div class="interes">
+                            <img  src="img/koen.png"  alt="">
+                        </div> 
+                        <div class="interes">
+                            <img  src="img/rolls.png"  alt="">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="inici" class="inicio">
+        <div id="carouselExampleIndicators" class="carousel slide texto-cuadrado" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/ferrari f40 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ferrari F40</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/audi r8 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Audi R8</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/bmw m3 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>BMW M3</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/laferrari carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>LaFerrari</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/lambo huracan carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lamborghini Huracan</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/lexus lc 500 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lexus LC</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/peugot 308 gti carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Peugot 308 GTI</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/porsche 911 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Porche 991</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/1 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>SSC Tuatara</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/2 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ford GT LM</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/3 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Aston Martin Vantage</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/4 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Koenigsegg</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/5 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Rolls Royce Barca </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/6 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Supra MK-5</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/7 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ferrari SF90</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/8 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Bentley Flying Spur S</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/9 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Corvette C8</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/10 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>BMW M5 CS</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/11 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>BMW M2 CS Racing</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/12 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lomborghini Squadra Corse</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/14 carousel.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Buggati Divon</h5>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
